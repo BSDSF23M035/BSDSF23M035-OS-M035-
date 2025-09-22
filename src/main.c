@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "../include/mystrfunctions.h"
 #include "../include/myfilefunctions.h"
 
