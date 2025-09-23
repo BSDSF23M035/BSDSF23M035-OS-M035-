@@ -20,7 +20,8 @@ Report :
         git add .
         I committed the changes with a descriptive message(git commit -m "any Description")
         I pushed the commit to GitHub(git push origin main)
-        
+
+		
 Feature-2: Multi-file Project using Make Utility
         Q1.Explain the linking rule in this part's Makefile:
         $(TARGET): $(OBJECTS)
@@ -61,6 +62,7 @@ Feature-2: Multi-file Project using Make Utility
         Attaching binaries (like bin/client) lets them run the program immediately.
         Ensures consistency — everyone who downloads the release gets the same compiled binary.
         Makes your project look professional and ready for distribution.
+		
 Feature-3: Creating and using Static Library
         Q1. Compare the Makefile from Part 2 and Part 3. What are the key differences in the variables and rules that enable the creation of a static library?
         In Part 2, the Makefile directly compiled all .c source files into object files and linked them into a single executable.
@@ -78,6 +80,8 @@ Feature-3: Creating and using Static Library
         Yes, the symbols for functions like mystrlen appear inside the final executable.
         This shows that static linking copies the actual code of the functions from the library into the executable at compile time.
         As a result, the executable is self-contained, does not need the library at runtime, and is usually larger in size compared to dynamic linking.
+
+		
 Feature-4: Creating and using Dynamic Library
         Q1. What is Position-Independent Code (-fPIC) and why is it a fundamental requirement for creating shared libraries?
         Position-Independent Code (PIC) means that the machine code can execute correctly regardless of where in memory it is loaded.
@@ -93,3 +97,4 @@ Feature-4: Creating and using Dynamic Library
         Since libmyutils.so was in a custom lib/ directory, setting LD_LIBRARY_PATH=./lib explicitly told the loader to search there.
         This shows that the dynamic loader is responsible for finding and mapping the required shared libraries into memory before the program runs.
         
+
